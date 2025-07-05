@@ -48,16 +48,18 @@ C_SOURCES =  \
 	Src/app/drive.c \
 	Src/app/enemy.c \
 	Src/drivers/io.c \
+	Src/drivers/mcu_init.c \
 	Src/system_stm32l4xx.c \
-
-CPP_CHECK_C_SOURCES =  \
-	Src/main.c \
-	$(C_SOURCES_WITH_HEADERS) \
 
 C_SOURCES_WITH_HEADERS = \
 	Src/app/drive.c \
 	Src/app/enemy.c \
 	Src/drivers/io.c \
+	Src/drivers/mcu_init.c \
+
+CPP_CHECK_C_SOURCES =  \
+	Src/main.c \
+	$(C_SOURCES_WITH_HEADERS) \
 
 HEADERS = \
 	$(C_SOURCES_WITH_HEADERS:.c=.h) \
